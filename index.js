@@ -8,6 +8,19 @@ function writeToFile(fileName, answers) {
     svgString += `${answers.shape}`;
     svgString += "<g>";
 
+    let shapeChoice
+    if (answers.shape == "triangle")
+    {
+        shapeChoice = new triangle();
+    }
 
-    
+    else if (answers.shape == "circle")
+    {
+        shapeChoice = new circle();
+    }
+
+    else  (answers.shape == "square")
+    {
+        shapeChoice = new square();
+    }
 }
